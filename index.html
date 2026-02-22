@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monografía: Washington & Jerusalén</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;600;800&display=swap');
+
+        :root {
+            --dc-accent: #1e293b;
+            --jr-accent: #854d0e;
+            --paper: #fcfaf7;
+        }
+
+        body {
+            background-color: #111;
+            color: #1e293b;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.8;
+        }
+
+        .document-wrapper {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .city-section {
+            background-color: var(--paper);
+            padding: 80px;
+            border-radius: 4px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .serif { font-family: 'Crimson Pro', serif; }
+
+        .section-header {
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        .city-title {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 1;
+        }
+
+        .point-container {
+            margin-bottom: 40px;
+        }
+
+        .point-header {
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .point-number {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dc-accent);
+            font-style: italic;
+        }
+
+        .jr-text .point-number { color: var(--jr-accent); }
+
+        .point-label {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #64748b;
+        }
+
+        .point-content {
+            font-size: 1.1rem;
+            text-align: justify;
+            color: #334155;
+        }
+
+        .intel-box {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .operation-badge {
+            background: #1e293b;
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .jr-badge { background: #854d0e; }
+
+        .highlight-text {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .stuxnet-analysis {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .city-section { padding: 40px 20px; }
+            .city-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-wrapper">
+
+        <!-- APARTADO 01: WASHINGTON D.C. -->
+        <section id="washington" class="city-section">
+            <div class="section-header">
+                <p class="uppercase tracking-widest text-xs font-bold text-slate-400 mb-2">Apartado Primero</p>
+                <h1 class="city-title serif text-slate-900">Washington D.C.</h1>
+                <p class="italic text-slate-500 text-lg">El Distrito Federal y la Arquitectura del Mando Occidental</p>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">01.</span>
+                    <span class="point-label">Entorno Natural y Social: La Geografía del Poder</span>
+                </div>
+                <div class="point-content">
+                    Washington D.C. no es una ciudad que surgió de la necesidad comercial, sino de una visión política. Situada en la orilla oriental del río Potomac, su ubicación fue elegida por George Washington como un punto medio entre el Norte y el Sur. Naturalmente, el terreno era un mosaico de humedales y ciénagas que le valieron el apodo de "The Swamp". Esta geografía húmeda y sofocante en verano ha forjado el carácter de la ciudad: una urbe de interiores refrigerados donde se decide el destino del mundo. Socialmente, es un microcosmos de extremos. Por un lado, la altísima densidad de profesionales con acceso a seguridad nacional y diplomáticos; por otro, una población local con una identidad cultural negra vibrante que ha resistido los procesos de gentrificación masiva.
+                </div>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">02.</span>
+                    <span class="point-label">Génesis e Historia: De la Nada a la Superpotencia</span>
+                </div>
+                <div class="point-content">
+                    Establecida formalmente por el Acta de Residencia en 1790, Washington fue la primera ciudad del mundo anglosajón planificada exhaustivamente antes de poner la primera piedra. Fue incendiada casi en su totalidad por las tropas británicas en 1814 durante la guerra anglo-estadounidense, lo que llevó a un debate nacional sobre si mover la capital hacia el oeste. Sin embargo, su reconstrucción se convirtió en un acto de fe nacional. Durante la Guerra Civil, se transformó en un campamento militar fortificado, y tras la Segunda Guerra Mundial, dejó de ser una capital regional para convertirse en el epicentro de la hegemonía global, atrayendo a las instituciones financieras y militares más poderosas del planeta.
+                </div>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">03.</span>
+                    <span class="point-label">Arquitectura: El Espejo de los Imperios</span>
+                </div>
+                <div class="point-content">
+                    La arquitectura de la capital es una herramienta de propaganda. El diseño de Pierre L'Enfant, con sus amplias avenidas diagonales, buscaba que cada edificio gubernamental fuera el foco de una vista panorámica. El estilo <span class="highlight-text">Neoclásico</span> domina el Mall, utilizando el mármol blanco para evocar la pureza democrática de Atenas y la fuerza administrativa de Roma. No obstante, existe un segundo Washington arquitectónico: el del <b>Brutalismo</b> del siglo XX. Edificios como el Departamento de Vivienda (HUD) o la sede del FBI en Pennsylvania Avenue utilizan el hormigón expuesto y formas angulares para proyectar una imagen de invulnerabilidad y peso burocrático, recordando que el poder no solo es idealista, sino también físico y pesado.
+                </div>
+            </div>
+
+            <div class="intel-box">
+                <div class="operation-badge">Cúpula de Inteligencia: CIA & NSA</div>
+                <h4 class="font-bold text-xl mb-3">Los Pulmones de la Información</h4>
+                <div class="point-content mb-4">
+                    Washington funciona gracias a una simbiosis de inteligencia humana y técnica. La <b>CIA (Agencia Central de Inteligencia)</b>, con sede en Langley, Virginia, es el brazo ejecutor del espionaje exterior. Su enfoque es el <b>HUMINT</b> (Inteligencia Humana); se trata de entender las motivaciones de los líderes extranjeros, infiltrar redes y ejecutar acciones encubiertas que el gobierno no puede admitir oficialmente.
+                    <br><br>
+                    En contraste, la <b>NSA (Agencia de Seguridad Nacional)</b> en Fort Meade, Maryland, es la entidad más opaca del país. Su campo es el <b>SIGINT</b> (Inteligencia de Señales). Operan bajo el lema "In God we trust, all others we monitor". Poseen la mayor concentración de superordenadores del mundo, dedicados a romper criptografía y capturar datos en tránsito por los cables submarinos y satélites. Si la CIA es el ojo que observa, la NSA es el oído que escucha cada bit de datos que circula por la red.
+                </div>
+                <p class="text-sm italic font-semibold text-slate-800 border-t pt-4">
+                    Operación Emblemática: Lanza de Neptuno (2011). No fue solo una misión militar; fue un triunfo de la inteligencia analítica. La NSA interceptó una llamada de un mensajero, y la CIA pasó meses analizando imágenes satelitales y perfiles humanos para confirmar la presencia de Bin Laden sin usar un solo espía dentro de la casa.
+                </p>
+            </div>
+        </section>
+
+        <!-- APARTADO 02: JERUSALÉN -->
+        <section id="jerusalen" class="city-section jr-text">
+            <div class="section-header">
+                <p class="uppercase tracking-widest text-xs font-bold text-amber-600 mb-2">Apartado Segundo</p>
+                <h1 class="city-title serif text-amber-900">Jerusalén</h1>
+                <p class="italic text-amber-700 text-lg">La Ciudad de Piedra y la Vanguardia de la Supervivencia</p>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">01.</span>
+                    <span class="point-label">Geografía de Montaña: La Fortaleza Sagrada</span>
+                </div>
+                <div class="point-content">
+                    Jerusalén se asienta sobre un terreno accidentado en los Montes de Judea, a una altitud que la protege de los calores extremos del desierto cercano pero que la somete a inviernos afilados. Geográficamente, está rodeada de valles profundos: el Valle del Cedrón y el Valle de Hinom han servido como fosos naturales durante tres milenios. Su recurso natural más preciado es la caliza dolomita, conocida como "Piedra de Jerusalén". Esta piedra no solo es el material de construcción, sino el alma de la ciudad; absorbe la humedad y refleja la luz del sol, otorgando a la urbe ese tono ámbar que la define. Humánamente, la ciudad es un nudo de tensiones: es el lugar donde la modernidad de Silicon Wadi choca frontalmente con la religiosidad ultraortodoxa y la milenaria herencia árabe.
+                </div>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">02.</span>
+                    <span class="point-label">Historia: El Centro de la Tormenta</span>
+                </div>
+                <div class="point-content">
+                    Pocas ciudades han sido destruidas 2 veces, asediadas 23 veces, atacadas 52 veces y capturadas y recapturadas otras 44 veces. Desde que el Rey David la declaró capital hace 3.000 años, Jerusalén ha sido el premio máximo de todos los imperios. Pasó de manos babilonias a persas, de griegas a romanas, y de bizantinas a árabes. Tras las Cruzadas y el largo dominio otomano, el siglo XX la situó en el epicentro del conflicto árabe-israelí. Hoy, su historia se escribe en clave de seguridad nacional; cada centímetro de su suelo es arqueología y cada rincón de su aire es vigilancia.
+                </div>
+            </div>
+
+            <div class="point-container">
+                <div class="point-header">
+                    <span class="point-number">03.</span>
+                    <span class="point-label">Arquitectura: El Triunfo de la Permanencia</span>
+                </div>
+                <div class="point-content">
+                    La arquitectura de Jerusalén es un <b>palimpsesto pétreo</b>. Lo más fascinante es la ley establecida durante el mandato británico (y mantenida por Israel) que exige que todas las construcciones usen piedra local. Esto crea una homogeneidad visual única en el mundo. Dentro de la Ciudad Vieja, la arquitectura es defensiva: calles estrechas y laberínticas diseñadas para confundir al invasor y proteger de la luz solar. La Cúpula de la Roca representa la cima de la geometría islámica, mientras que el Muro de las Lamentaciones es el último vestigio de la colosal arquitectura herodiana. Jerusalén es una ciudad donde los búnkeres modernos y los centros de datos están revestidos de la misma piedra que los templos de hace dos mil años.
+                </div>
+            </div>
+
+            <div class="intel-box">
+                <div class="operation-badge jr-badge">Escudo del Estado: Mossad & Unidad 8200</div>
+                <h4 class="font-bold text-xl mb-3">La Mente de la Supervivencia Activa</h4>
+                <div class="point-content mb-4">
+                    Para Israel, la inteligencia no es una opción, es una condición existencial. El <b>Mossad</b> (Instituto para la Inteligencia y Operaciones Especiales) es famoso por su agilidad y su falta de burocracia. Se centran en operaciones de campo, asesinatos selectivos y exfiltraciones de alto riesgo. Su prestigio se basa en el <b>Humint</b> agresivo.
+                    <br><br>
+                    Sin embargo, el verdadero poder moderno de Jerusalén reside en la <b>Unidad 8200</b>. Esta unidad de la Dirección de Inteligencia Militar es la que ha transformado a Israel en una "Cyber Nation". Reclutan a los jóvenes más brillantes antes de que entren en la universidad, sometiéndolos a un entrenamiento de hacking ético, criptoanálisis y guerra digital. La mayoría de las startups de ciberseguridad del mundo han sido fundadas por ex-miembros de la 8200.
+                </div>
+
+                <div class="stuxnet-analysis">
+                    <span class="highlight-text">ANÁLISIS DE OPERACIÓN: STUXNET (2010)</span><br><br>
+                    Stuxnet no fue un virus ordinario; fue la primera arma digital capaz de causar daños físicos masivos. Desarrollado por la Unidad 8200 en colaboración con la NSA, su objetivo fueron las centrifugadoras de enriquecimiento de uranio en Natanz, Irán. 
+                    <br><br>
+                    Lo que lo hizo "magia negra" informática fue:
+                    1. Zero-Days: Utilizó 4 vulnerabilidades desconocidas hasta entonces en Windows.
+                    2. Air-Gap: Logró saltar la barrera de computadoras no conectadas a internet mediante memorias USB infectadas.
+                    3. Sabotaje Físico: El código tomó el control de los PLC (Controladores Lógicos Programables) de Siemens, ordenando a las centrifugadoras girar a velocidades destructivas mientras enviaba datos falsos a los operarios indicando que todo funcionaba normal. 
+                    <br><br>
+                    El resultado fue la destrucción física de casi mil máquinas, retrasando el programa nuclear iraní años sin disparar un solo misil.
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center p-12 text-gray-400 italic text-sm">
+       
+    </footer>
+
+</body>
+</html>
